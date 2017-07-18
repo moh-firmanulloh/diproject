@@ -53,3 +53,4 @@ $route['default_controller'] = 'site';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['eo'] = 'Event_organizer';
+$route['eo/events-gallery'] = 'Event_organizer/eventsGallery';

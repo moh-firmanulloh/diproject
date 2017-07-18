@@ -22,7 +22,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="<?php echo base_url('assets/css/agency.min.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/agency.css') ?>" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,33 +39,38 @@
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Dinian Event Organizer</a>
+                <a class="navbar-brand" href="<?php echo base_url('eo') ?>">Dinian Event Organizer</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                    <li class="<?php echo ($this->uri->segment(1) == 'eo' AND $this->uri->segment(2) == '')? 'active' : ''; ?>">
+                        <a href="<?php echo base_url('eo') ?>">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a href="<?php echo base_url('') ?>">Our Experience</a>
+                    </li>
+                    <li class="dropdown drophover <?php echo ($this->uri->segment(1) == 'eo' AND ($this->uri->segment(2) == 'events-gallery' OR $this->uri->segment(2) == 'girls-gallery'))? 'active' : ''; ?>">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Galleries<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="<?php echo ($this->uri->segment(1) == 'eo' AND $this->uri->segment(2) == 'girls-gallery')? 'active' : ''; ?>">
+                                <a href="<?php echo base_url('eo/events-gallery') ?>">Event Galleries</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo base_url('') ?>">Girls Galleries</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a href="<?php echo base_url('') ?>">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a href="<?php echo base_url('') ?>">Contact Us</a>
                     </li>
                 </ul>
             </div>
