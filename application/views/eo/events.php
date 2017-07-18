@@ -1,5 +1,6 @@
 <section id="portfolio" class="bg-light-gray">
         <div class="container">
+        <hr>
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Events Galleries</h2>

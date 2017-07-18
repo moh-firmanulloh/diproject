@@ -46,11 +46,14 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+hr {
+  border-color: inherit;
+}
 .img-centered {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: #eeeeee;
+  background-color: #bebebe;
 }
 .bg-darkest-gray {
   background-color: #222222;
