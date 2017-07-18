@@ -13,6 +13,12 @@ class Event_organizer extends CI_Controller {
 		$this->load->view('eo/layout/template', $data);
 	}
 
+	public function eventsGallery()
+	{
+		$data['konten'] = 'eo/events';
+		$this->load->view('eo/layout/template', $data);
+	}
+
 }
 
 /* End of file Event_organizer.php */
