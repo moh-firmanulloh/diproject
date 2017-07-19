@@ -9,7 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dinian - Event Organizer Bogor</title>
+    <title>DINIAN | Property and Event Organizer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="<?php echo base_url('assets/img/favicon.png') ?>">
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url('assets/css/bootstrap.css'); ?>" rel="stylesheet">
@@ -43,7 +46,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="<?php echo base_url('eo') ?>">Dinian Event Organizer</a>
+                <a class="navbar-brand" href="<?php echo base_url('eo') ?>"><div class="myIcon">&emsp;&ensp;Dinian Event Organizer</div></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,8 +69,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="<?php echo base_url('') ?>">About</a>
+                    <li class="<?php echo ($this->uri->segment(1) == 'eo' AND $this->uri->segment(2) == 'about-us')? 'active' : ''; ?>">
+                        <a href="<?php echo base_url('eo/about-us') ?>">About</a>
                     </li>
                     <li>
                         <a href="<?php echo base_url('') ?>">Contact Us</a>

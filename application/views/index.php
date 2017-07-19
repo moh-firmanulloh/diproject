@@ -11,7 +11,10 @@
     <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
     <meta name="author" content="">
 
-    <title>Flatfy – Free Flat and Responsive HTML5 Template</title>
+    <title>DINIAN | Property and Event Organizer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="<?php echo base_url('assets/img/favicon.png') ?>">
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url('assets/') ?>css/bootstrap.min.css" rel="stylesheet">
@@ -58,8 +61,10 @@
 	<!-- FullScreen -->
     <div class="intro-header">
 		<div class="col-xs-12 text-center abcen1">
+			<div class="myIcon"><p>&emsp;</p><p>&emsp;</p><p>&emsp;</p><p>&emsp;</p><p>&emsp;</p><p>&emsp;</p></div>
 			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Dinian</h1>
 			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Event Organizer and Property</h3>
+			<h3 class="h3_home wow fadeIn" data-wow-delay="0.8s">Visit Us !</h3>
 			<ul class="list-inline intro-social-buttons">
 				<li><a href="<?php echo base_url('eo') ?>" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Event Organizer</span></a>
 				</li>

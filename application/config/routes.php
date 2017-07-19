@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['eo'] = 'Event_organizer';
 $route['eo/events-gallery'] = 'Event_organizer/eventsGallery';
+$route['eo/about-us'] = 'Event_organizer/aboutUs';

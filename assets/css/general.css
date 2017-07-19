@@ -132,7 +132,11 @@ filter: alpha(opacity=95) !important;
 	background-position:center;
 	margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
-
+/*My Icon*/
+.myIcon {
+	height: 240px;
+	background: url(../img/icon240.png) no-repeat center;
+}
 
 /* Button */ 
 .mybutton_standard {

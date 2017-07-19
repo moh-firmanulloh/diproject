@@ -19,6 +19,12 @@ class Event_organizer extends CI_Controller {
 		$this->load->view('eo/layout/template', $data);
 	}
 
+	public function aboutUs()
+	{
+		$data['konten']	= 'eo/about';
+		$this->load->view('eo/layout/template', $data);
+	}
+
 }
 
 /* End of file Event_organizer.php */
